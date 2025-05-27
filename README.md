@@ -1,13 +1,12 @@
 # Multi-Modal-Product-Matching-with-Deep-Neural-Networks-for-Large-Scale-E-commerce-Applications
 
-# Multi-Modal Product Matching with Deep Neural Networks for Large-Scale E-Commerce Applications
-
 ## Project Overview
 
 Online e-commerce platforms face a critical challenge of **duplicate product listings** that confuse buyers, mislead pricing, and reduce trust in the platform. Sellers also suffer from copycat listings and price manipulations. Traditional matching methods struggle due to visual and textual variations in product images and descriptions.
 
 This project develops a **multi-modal deep learning system** that combines image and text embeddings to accurately detect duplicate product listings at scale. The solution improves search relevance, reduces fraud, and helps clean up product catalogs on large platforms like Shopee.
 
+Dataset Link: https://www.kaggle.com/competitions/shopee-product-matching/data
 ---
 
 ## Why This Project?
