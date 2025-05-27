@@ -1,0 +1,11 @@
+numpy
+pandas
+matplotlib
+opencv-python
+torch
+timm
+transformers
+faiss-gpu
+scikit-learn
+tqdm
+Pillow
