@@ -10,22 +10,22 @@ Dataset Link: https://www.kaggle.com/competitions/shopee-product-matching/data
 ---
 
 ```
-Project Structure 
+ 
 
 Multi-Modal-Product-Matching/
 │
 ├── README.md                      # Project overview + usage + results summary
-├── requirements.txt               # All dependencies: torch, transformers, timm, faiss-gpu, sklearn, pandas, etc.
+├── requirements.txt               
 │
-├── data/                         # Dataset info + README (do NOT upload raw data)
-│   └── README.md                 # Describe Shopee dataset, where/how to download
+├── data/                         # Dataset info + README 
+│   └── README.md                 
 │
-├── notebooks/                    # Jupyter notebooks for prototyping + experiments
+├── notebooks/                    # Jupyter notebooks 
 │   ├── feature_extraction_7submodels.ipynb   # Your 7 submodels extraction & fusion
 │   ├── feature_extraction_2models.ipynb      # Simplified 2 models notebook
 │   └── analysis.ipynb            # Evaluation, visualization, result analysis
 │
-├── models/                      # Modular model code (Python scripts)
+├── models/                      # Modular model code 
 │   ├── nfnet_extractor.py        # NFNet feature extraction class
 │   ├── swin_transformer.py       # Swin Transformer extractor class
 │   ├── efficientnet_extractor.py # EfficientNet extractor class
@@ -33,7 +33,7 @@ Multi-Modal-Product-Matching/
 │   ├── albert_extractor.py       # ALBERT extractor class
 │   ├── multilingual_bert.py      # Multilingual BERT extractor class
 │   ├── tfidf_extractor.py        # TF-IDF extractor class
-│   └── feature_fusion.py         # Combine features, normalization, PCA etc.
+│   └── feature_fusion.py         # Combine features
 │
 ├── scripts/                    # Scripts for running training, inference, postprocessing
 │   ├── extract_features.py       # Runs all extraction pipeline, saves .npy files
@@ -41,14 +41,12 @@ Multi-Modal-Product-Matching/
 │   ├── run_similarity_search.py  # Query FAISS, get top-k neighbors
 │   ├── voting.py                 # Implements voting mechanism & final predictions
 │   ├── evaluate.py               # Computes F1, precision, recall etc.
-│   └── postprocess.py            # Optional cleaning & thresholding
+│   └── postprocess.py            # Optional cleaning & thresholding                 
 │
-├── outputs/                    # Save embeddings, intermediate .npy/.joblib, results here (gitignored)
-│
-├── utils/                      # Utility functions (e.g., image loading, preprocessing)
+├── utils/                      # Utility functions 
 │   └── utils.py
 │
-└── docs/                       # Final report, poster, presentations
+└── docs/                       # Final Work in doc
     ├── Final_Project_Report.pdf
     └── Poster_Presentation.pdf
 ```
