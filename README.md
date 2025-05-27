@@ -9,6 +9,49 @@ This project develops a **multi-modal deep learning system** that combines image
 Dataset Link: https://www.kaggle.com/competitions/shopee-product-matching/data
 ---
 
+Project Structure 
+
+Multi-Modal-Product-Matching/
+│
+├── README.md                      # Project overview + usage + results summary
+├── requirements.txt               # All dependencies: torch, transformers, timm, faiss-gpu, sklearn, pandas, etc.
+│
+├── data/                         # Dataset info + README (do NOT upload raw data)
+│   └── README.md                 # Describe Shopee dataset, where/how to download
+│
+├── notebooks/                    # Jupyter notebooks for prototyping + experiments
+│   ├── feature_extraction_7submodels.ipynb   # Your 7 submodels extraction & fusion
+│   ├── feature_extraction_2models.ipynb      # Simplified 2 models notebook
+│   └── analysis.ipynb            # Evaluation, visualization, result analysis
+│
+├── models/                      # Modular model code (Python scripts)
+│   ├── nfnet_extractor.py        # NFNet feature extraction class
+│   ├── swin_transformer.py       # Swin Transformer extractor class
+│   ├── efficientnet_extractor.py # EfficientNet extractor class
+│   ├── distilbert_extractor.py   # DistilBERT text extractor class
+│   ├── albert_extractor.py       # ALBERT extractor class
+│   ├── multilingual_bert.py      # Multilingual BERT extractor class
+│   ├── tfidf_extractor.py        # TF-IDF extractor class
+│   └── feature_fusion.py         # Combine features, normalization, PCA etc.
+│
+├── scripts/                    # Scripts for running training, inference, postprocessing
+│   ├── extract_features.py       # Runs all extraction pipeline, saves .npy files
+│   ├── build_faiss_index.py      # Loads features, builds FAISS index
+│   ├── run_similarity_search.py  # Query FAISS, get top-k neighbors
+│   ├── voting.py                 # Implements voting mechanism & final predictions
+│   ├── evaluate.py               # Computes F1, precision, recall etc.
+│   └── postprocess.py            # Optional cleaning & thresholding
+│
+├── outputs/                    # Save embeddings, intermediate .npy/.joblib, results here (gitignored)
+│
+├── utils/                      # Utility functions (e.g., image loading, preprocessing)
+│   └── utils.py
+│
+└── docs/                       # Final report, poster, presentations
+    ├── Final_Project_Report.pdf
+    └── Poster_Presentation.pdf
+
+
 ## Why This Project?
 
 - Duplicate product listings confuse buyers and mislead pricing.
