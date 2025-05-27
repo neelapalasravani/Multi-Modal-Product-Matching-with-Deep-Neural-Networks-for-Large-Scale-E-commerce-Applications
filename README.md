@@ -9,6 +9,7 @@ This project develops a **multi-modal deep learning system** that combines image
 Dataset Link: https://www.kaggle.com/competitions/shopee-product-matching/data
 ---
 
+```
 Project Structure 
 
 Multi-Modal-Product-Matching/
@@ -50,7 +51,7 @@ Multi-Modal-Product-Matching/
 └── docs/                       # Final report, poster, presentations
     ├── Final_Project_Report.pdf
     └── Poster_Presentation.pdf
-
+```
 
 ## Why This Project?
 
